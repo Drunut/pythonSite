@@ -5,6 +5,11 @@
     <title>Hello</title>
 </head>
 <body>
-    Hello {{name}}
+    <p>Hello {{name}}</p>
+    <p>The Previous visitors were:</p>
+    {{ nameList }}
+    <!-- The first argument of 'url_for' is the function of the page you want-->
+    <a href="{{url_for('homePage') }}">Take me Home.</a>
+
 </body>
 </html>
